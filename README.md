@@ -4,7 +4,7 @@
 
 ### Purpose
 
-#### The purpose of this analysis is to provide insight into characteristics that indicate greater chances of success when launching a Kickstarter campaign for a theatrical play, based upon the choice of launch month theatrical productions as well as upon target fundraising goal ranges for plays specifically. To accomplish these objectives, key information from a Kickstarter database was utilized to develop a pivot chart summarizing the number of successful, failed, and canceled campaigns for theatrical projects per the month the campaigns were created. In addition, a line graph was developed to present Kickstarter outcomes (e.g., successful, failed, canceled) stratified by the range of campaign goals (presented in dollars).
+The purpose of this analysis is to provide insight into characteristics that indicate greater chances of success when launching a Kickstarter campaign for a theatrical play, based upon the choice of launch month theatrical productions as well as upon target fundraising goal ranges for plays specifically. To accomplish these objectives, key information from a Kickstarter database was utilized to develop a pivot chart summarizing the number of successful, failed, and canceled campaigns for theatrical projects per the month the campaigns were created. In addition, a line graph was developed to present Kickstarter outcomes (e.g., successful, failed, canceled) stratified by the range of campaign goals (presented in dollars).
 
 ## Analysis and Challenges
 
