@@ -22,7 +22,7 @@ In a new sheet, a pivot table was developed from the Kickstarter! worksheet wher
 
 The Parent Category filter was utilized to only present information on Kickstarter campaigns categorized as “Theater”. Though the ability to filter by year was included, we did not restrict the analysis by year and included all years for the primary analysis. A Pivot chart was created from this information to present theater outcomes based on the month of launch:
 
-![Theater Outcomes Based on Launch Date](resources_module 1/Theater_Outcomes_vs_Launch.png)
+![Theater Outcomes Based on Launch Date](resources_module_1/Theater_Outcomes_vs_Launch.png)
 
 ### Analysis of Outcomes Based on Goals
 
@@ -40,7 +40,7 @@ Percentages for each outcome were calculated by dividing the counts of each resp
 
 From the finished table, a line chart was created that presented information on the percentage of Kickstarter play campaigns by outcome, stratified by target fundraising goal, as seen below:
 
-![Kickstarter Play Campaign Outcomes Stratified by Target Fundraising Goal](resources_module 1/Outcomes_vs_Goals.png)
+![Kickstarter Play Campaign Outcomes Stratified by Target Fundraising Goal](resources_module_1/Outcomes_vs_Goals.png)
 
 ### Challenges and Difficulties Encountered
 
