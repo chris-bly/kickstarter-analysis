@@ -12,30 +12,35 @@ The purpose of this analysis is to provide insight into characteristics that ind
 
 In a previous lesson, we converted times each Kickstarter campaign was launched, presented in UNIX time, to human date codes using the following formula in a new column:
 
-=(((CELL/60)/60)/24)+DATE(1970,1,1)
+`=(((CELL/60)/60)/24)+DATE(1970,1,1)`
 
 In the current challenge, we converted that human date to only present the year the Kickstarter campaign was created using the following formula in a new column:
 
-=YEAR(CELL)
+`=YEAR(CELL)`
 
 In a new sheet, a pivot table was developed from the Kickstarter! worksheet where “Parent Category” and “Years” were utilized as filters. The independent variables, in this case the months of the year, were placed in the Axis (categories) of the pivot table fields, with the yearly and quarterly options removed leaving only the months remaining. The dependent variables populated in the columns for the Legend (series) portion of the pivot table fields were the outcomes. The Σ Values of interest populated in the pivot table fields were the counts of outcomes. 
-The Parent Category filter was utilized to only present information on Kickstarter campaigns categorized as “Theater”. Though the ability to filter by year was included, we did not restrict the analysis by year and included all years for the primary analysis.
+
+The Parent Category filter was utilized to only present information on Kickstarter campaigns categorized as “Theater”. Though the ability to filter by year was included, we did not restrict the analysis by year and included all years for the primary analysis. A Pivot chart was created from this information to present theater outcomes based on the month of launch:
+
+![Theater Outcomes Based on Launch Date](resources_module 1/Theater_Outcomes_vs_Launch.png)
 
 ### Analysis of Outcomes Based on Goals
 
 Per the instructions in the Module Challenge, a new sheet was created that included a new table to present data on successful, failed, and canceled Kickstarter play campaigns stratified by ranges of campaign goals. For each outcome, we used the COUNTIFS function to present the count of Kickstarter play campaigns that qualified based upon their target fundraising goal. As an example, the equation used to identify Kickstarter play campaigns that were successfully funded and had a target fundraising goal of $5,000-$9,999 was as follows:
 
-=COUNTIFS(Kickstarter!$F:$F,"successful", Kickstarter!$D:$D,">=5000", Kickstarter!$D:$D,"<=9999", Kickstarter!$R:$R, "plays")
+`=COUNTIFS(Kickstarter!$F:$F,"successful", Kickstarter!$D:$D,">=5000", Kickstarter!$D:$D,"<=9999", Kickstarter!$R:$R, "plays")`
 
 Counts for total projects for each fundraising goal strata were summed from the counts of the number successful, number failed, and number canceled (though there were zero canceled Kickstarter play campaigns in the dataset) using the following equation for the "less than 1000" row:
 
-=SUM(B2:D2)
+`=SUM(B2:D2)`
 
 Percentages for each outcome were calculated by dividing the counts of each respective outcome by the total projects per goal strata using the following equation to find the percentage of successful Kickstarter play campaigns when the goal was 10000-14999:
 
-=B5/$E5
+`=B5/$E5`
 
-From the finished table, a line chart was created that presented information on the percentage of Kickstarter play campaigns by outcome, stratified by target fundraising goal.
+From the finished table, a line chart was created that presented information on the percentage of Kickstarter play campaigns by outcome, stratified by target fundraising goal, as seen below:
+
+![Kickstarter Play Campaign Outcomes Stratified by Target Fundraising Goal](resources_module 1/Outcomes_vs_Goals.png)
 
 ### Challenges and Difficulties Encountered
 
